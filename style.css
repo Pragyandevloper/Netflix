@@ -1,0 +1,432 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Playwrite+BR+Guides&family=Playwrite+DE+SAS+Guides&display=swap');
+ 
+*{
+margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image:url("https://assets.nflxext.com/ffe/siteui/vlv3/fd8ae3c6-340b-490b-9d3c-f8a3df895c45/web/NP-en-20260907-TRIFECTA-perspective_f6d1fcaf-3da7-4c71-9ec1-224a994032d1_large.jpg");
+    height: 80vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1000px, 100vw);
+    position: relative;
+}
+.main .box{
+    height: 80vh;
+    width: 100%;
+    opacity: 0.7;
+    background-color:black;
+    position: absolute;
+    top: 0;
+}
+nav{
+    max-width: 80vw;
+ 
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    max-height: 60px;
+}
+nav img{
+    width: 150px;
+    position: relative;
+    z-index: 1;
+}
+nav button{
+    font-weight: bolder;
+    color: white;
+    background-color: red;
+    border: 3px solid red;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.nav_text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    padding: 50px;
+    gap: 25px;
+}
+.nav_text> :nth-child(-n+2) {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    text-align: center;
+}
+.nav_text>:nth-child(3){
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.nav_text >:nth-child(4){
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+ 
+.login_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    max-width: 600px;
+}
+ 
+.login_page input {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    height: 56px;
+    padding: 0 16px;
+    background-color: rgba(22, 22, 22, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    outline: none;
+}
+ 
+ 
+.login_page input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    opacity: 1; 
+}
+ 
+ 
+.login_page input:hover {
+    border-color: white;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+ 
+ 
+.login_page button {
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    background-color: #e50914;
+    border: none;
+    border-radius: 4px;
+    height: 56px;
+    padding: 0 24px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.login_page button:hover {
+    background-color: #c11119;
+}
+.line{
+    height: 10px;
+    background-color: gray;
+}
+.introduction{
+    margin: 30px 0px;
+    padding: 30px;
+  
+    color: white;
+    font-weight: 500;
+    font-size:24px ;
+}
+.items{
+    display: flex;
+    justify-content: safe center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    padding: 0 50px;
+    overflow-x: auto;
+ 
+}
+.items {
+    scrollbar-width: thin;
+    scrollbar-color: #555 transparent;
+}
+ 
+ 
+.items::-webkit-scrollbar {
+    height: 6px;
+}
+ 
+.items::-webkit-scrollbar-track {
+    background: transparent;
+}
+ 
+.items::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}
+ 
+.items::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+.items img{
+      width:190px;
+    height:300px; 
+      object-fit: cover;
+      border-radius: 10px;
+}
+.items img:hover{
+    transition: transform 1s ease;
+    transform: scale(1.1);
+}
+ 
+.choose_us {
+    width: 100%;
+    padding: 20px 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+ 
+ 
+.choose_us .item1 {
+    height: 299px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 99%); 
+    border-radius: 16px;
+    padding: 24px;
+    color: white;
+}
+.choose_us h2{
+    margin: 15px 10px;
+ 
+}
+.faq{
+    color: white;
+    background-color: black;
+       padding: 30px;
+    
+}
+.faq h2{
+    text-align: center;
+font-size: 48px;
+ 
+}
+.faqbox{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 30px;
+margin: 30px auto;
+max-width: 40vw;
+cursor: pointer;
+}
+.faqbox:hover{
+    background-color:rgb(37 36 36);
+}
+ 
+footer {
+    background-color: black;
+    color: #b3b3b3;
+    padding: 70px 8vw;
+}
+ 
+.last_login {
+    max-width: 1000px;
+    margin: auto;
+}
+ 
+.last_login > p:first-child {
+    margin-bottom: 35px;
+    font-size: 16px;
+}
+ 
+.footer_links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+ 
+.footer_links div {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+ 
+.footer_links a {
+    color: #b3b3b3;
+    font-size: 14px;
+    text-decoration: underline;
+}
+ 
+.footer_links a:hover {
+    color: white;
+}
+ 
+.language {
+    margin-top: 35px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid #777;
+    border-radius: 3px;
+    font-size: 14px;
+}
+ 
+.netflix_nepal {
+    margin-top: 30px;
+    font-size: 14px;
+}
+ 
+/* =========================================
+   RESPONSIVE MEDIA QUERIES
+   (added only — no existing rules changed)
+   ========================================= */
+ 
+/* Tablets and small laptops */
+@media (max-width: 992px) {
+    .nav_text > :nth-child(-n+2) {
+        font-size: 38px;
+    }
+ 
+    .choose_us {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 30px;
+    }
+ 
+    .faqbox {
+        max-width: 70vw;
+    }
+ 
+    .footer_links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+ 
+/* Tablets / large phones */
+@media (max-width: 768px) {
+    nav {
+        max-width: 90vw;
+    }
+ 
+    nav img {
+        width: 110px;
+    }
+ 
+    .nav_text {
+        padding: 30px 20px;
+        gap: 18px;
+    }
+ 
+    .nav_text > :nth-child(-n+2) {
+        font-size: 30px;
+    }
+ 
+    .nav_text > :nth-child(3) {
+        font-size: 17px;
+    }
+ 
+    .nav_text > :nth-child(4) {
+        font-size: 14px;
+    }
+ 
+    .login_page {
+        flex-direction: column;
+        max-width: 90%;
+    }
+ 
+    .login_page input,
+    .login_page button {
+        width: 100%;
+    }
+ 
+    .introduction {
+        padding: 20px;
+        font-size: 20px;
+    }
+ 
+    .items {
+        gap: 16px;
+        padding: 0 20px;
+    }
+ 
+    .items img {
+        width: 140px;
+        height: 220px;
+    }
+ 
+    .choose_us {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+ 
+    .choose_us .item1 {
+        height: auto;
+        min-height: 180px;
+    }
+ 
+    .faq h2 {
+        font-size: 32px;
+    }
+ 
+    .faqbox {
+        max-width: 85vw;
+        padding: 20px;
+    }
+ 
+    footer {
+        padding: 50px 6vw;
+    }
+ 
+    .footer_links {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+ 
+/* Phones */
+@media (max-width: 480px) {
+    nav img {
+        width: 90px;
+    }
+ 
+    .nav_text > :nth-child(-n+2) {
+        font-size: 22px;
+    }
+ 
+    .nav_text > :nth-child(3) {
+        font-size: 14px;
+    }
+ 
+    .nav_text > :nth-child(4) {
+        font-size: 12px;
+    }
+ 
+    .login_page input,
+    .login_page button {
+        height: 46px;
+        font-size: 14px;
+    }
+ 
+    .items img {
+        width: 110px;
+        height: 170px;
+    }
+ 
+    .faq h2 {
+        font-size: 24px;
+    }
+ 
+    .faqbox {
+        max-width: 100%;
+        padding: 15px;
+        font-size: 14px;
+    }
+ 
+    .footer_links {
+        grid-template-columns: 1fr;
+    }
+}
